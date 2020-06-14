@@ -34,7 +34,7 @@ public class Main {
             String invoer = scanner.nextLine();
             String invoerLowerCase = invoer.toLowerCase();
 
-            if (invoer.equals(stoppen)) {
+            if (invoerLowerCase.equals(stoppen)) {
                 spelen = false;
                 System.out.println("Bedankt voor het spelen");
                 break;
