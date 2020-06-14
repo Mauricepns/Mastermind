@@ -11,7 +11,7 @@ public class Main {
         Random r = new Random();
         boolean spelen = true;
         String stoppen = "q";
-        String goedeLetters = "abcdef";
+        String goedeLetters = "abcdefq";
 
         char a = (char) (r.nextInt(6) + 'a');
         char b = (char) (r.nextInt(6) + 'a');
@@ -37,6 +37,7 @@ public class Main {
             if (invoer.equals(stoppen)) {
                 spelen = false;
                 System.out.println("Bedankt voor het spelen");
+                break;
             }
 
             if ((invoerLowerCase.length() == 4) && (invoerLowerCase.matches("[" + goedeLetters + "]+"))) {
